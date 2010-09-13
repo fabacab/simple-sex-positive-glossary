@@ -54,118 +54,115 @@ function sexPositiveGlossaryTerm($text) {
             // key is the search pattern, value is the acronym expansion
             // Be certain to include a full-match parenthesis boundary for the replacement!
             array("(Sex Work(ers?)?)" => "http://sexuality.about.com/od/glossary/g/sex_work.htm"),
-            "Sex Toy" => "http://sexuality.about.com/od/glossary/g/sex_toys.htm",
-            "Sex Positive" => "http://sexuality.about.com/od/glossary/g/sex_positive.htm",
             "ASFR" => "http://sexuality.about.com/od/glossary/g/asfr.htm",
             "Abstinence" => "http://sexuality.about.com/od/glossary/g/abstinence.htm",
             "Acrotomophilia" => "http://sexuality.about.com/od/glossary/g/Acrotomophilia.htm",
-            "Agalmatophilia" => "http://sexuality.about.com/od/glossary/g/agalmatophilia.htm"
-            // TODO:
-//            Agoraphilia
-//            Anal Beads
-//            Anal Dildo
-//            Analingus
-//            Anorgasmia
-//            Asexual
-//            Asphyxiophilia
-//            Autofellatio
-//            Avatar
-//            BDSM
-//            Bestiality
-//            Bot
-//            Butt Plugs
-//            Candaulism
-//            Casual Sex
-//            Certified Sexuality Educator
-//            Chlamydia
-//            Coccinelle 1931-2006
-//            Coitus
-//            Coprophilia
-//            Cuckold
-//            Cuddle Party
-//            Dental Dam
-//            Devotees
-//            Dildo
-//            DSM (Diagnostic and Statistical Manual of Mental Disorders)
-//            Dual Action Vibrator
-//            Dysparuenia
-//            Edging
-//            Emergent sex
-//            Erectile Dysfunction
-//            Erotophilia and Erotophobia
-//            Female genital cosmetic surgery
-//            Female Orgasmic Disorder
-//            Female Sexual Dysfunction
-//            Fetish
-//            Frenulum Breve
-//            Fritz Klein 1932-2006
-//            Genetic Determinism
-//            Genital Herpes
-//            Hypersexual Disorder
-//            Hypoactive Sexual Desire Disorder (HSDD)
-//            Intercourse
-//            Kegel Exercises
-//            Klismaphilia
-//            Labiaplasty
-//            Lichen Sclerosus
-//            Male Orgasmic Disorder
-//            Male Strap On
-//            Male Vibrator
-//            Masturbation
-//            Non Ejaculatory Orgasm
-//            Non-Monogamy
-//            Oral Sex Taste
-//            Pansexual
-//            Paraphilias
-//            Penile Dysmorphophobia
-//            Penile Prosthesis
-//            Penis Limiter
-//            Penis Pumps
-//            Perineum
-//            Persistent Genital Arousal Disorder (PGAD)
-//            Persistent Sexual Arousal Syndrome (PSAS)
-//            Phimosis
-//            Phthalates
-//            Play Piercing
-//            Pre-cum
-//            Pre-ejaculatory fluid
-//            Premature Ejaculation
-//            Priapism
-//            Public Display of Affection (PDA)
-//            Pubococcygeus (PC) Muscles
-//            Rainbow Parties
-//            Refractory Period
-//            Romantic product salesmen
-//            Sex Coach
-//            Sex Drive
-//            Sex Educator
-//            Sex Professional
-//            Sex Researcher
-//            Sex Tech
-//            Sex Therapist
-//            Sexologist
-//            Sexology
-//            Sexual Behavior
-//            Sexual Compatibility
-//            Sexual Dysfunction
-//            Sexual Health
-//            Sexual Identity
-//            Sexual Intimacy
-//            Sexual Orientation
-//            Sexual Problem
-//            Sexual Surrogates
-//            Small Penis Syndrome
-//            Swinging
-//            Teledildonics
-//            Vacuum Pumps
-//            Vaginoplasty
-//            Vasocongestion
-//            Vibrator
-//            Virtual Sex
-//            Zoophilia
-//            Uncircumcise
-//            Marital Aids
-//            Kinsey Scale
+            "Agalmatophilia" => "http://sexuality.about.com/od/glossary/g/agalmatophilia.htm",
+            "Agoraphilia" => "http://sexuality.about.com/od/glossary/g/Agoraphilia.htm",
+            "Anal Beads" => "http://sexuality.about.com/od/sextoys/a/anal_beads.htm",
+            "Anal Dildo" => "http://sexuality.about.com/od/sextoys/a/anal_dildo.htm",
+            "Analingus" => "http://sexuality.about.com/od/glossary/g/analingus.htm",
+            "Anorgasmia" => "http://sexuality.about.com/od/glossary/g/anorgasmia.htm",
+            "Asexual" => "http://sexuality.about.com/od/glossary/g/asexual.htm",
+            "Asphyxiophilia" => "http://sexuality.about.com/od/glossary/g/asphyxiophilia.htm",
+            "Autofellatio" => "http://sexuality.about.com/od/glossary/g/autofellatio.htm",
+            "Avatar" => "http://sexuality.about.com/od/glossary/g/avatar.htm",
+            "BDSM" => "http://sexuality.about.com/od/glossary/g/BDSM.htm",
+            "Bestiality" => "http://sexuality.about.com/od/glossary/g/bestiality.htm",
+            "Bot" => "http://sexuality.about.com/od/glossary/g/bot.htm",
+            "Butt Plugs" => "http://sexuality.about.com/od/sextoys/a/butt_plugs.htm",
+            "Candaulism" => "http://sexuality.about.com/od/glossary/g/Candaulism.htm",
+            "Casual Sex" => "http://sexuality.about.com/od/glossary/g/casual_sex.htm",
+            "Certified Sexuality Educator" => "http://sexuality.about.com/od/glossary/g/certified_sexuality_educator.htm",
+            "Chlamydia" => "http://sexuality.about.com/od/glossary/g/chlamydia.htm",
+            "Coccinelle" => "http://sexuality.about.com/od/glossary/g/Coccinelle.htm",
+            "Coitus" => "http://sexuality.about.com/od/glossary/g/coitus.htm",
+            "Coprophilia" => "http://sexuality.about.com/od/glossary/g/coprophilia.htm",
+            "Cuckold" => "http://sexuality.about.com/od/glossary/g/cuckold.htm",
+            "Cuddle Party" => "http://sexuality.about.com/od/glossary/g/cuddleparty.htm",
+            "DSM" => "http://sexuality.about.com/od/glossary/g/DSM.htm",
+            "Dental Dam" => "http://sexuality.about.com/od/glossary/g/dental_dam.htm",
+            "Devotees" => "http://sexuality.about.com/od/glossary/g/devotees.htm",
+            "Dildo" => "http://sexuality.about.com/od/glossary/g/dildo.htm",
+            "Dual Action Vibrator" => "http://sexuality.about.com/od/glossary/g/dual_action_vib.htm",
+            "Dysparuenia" => "http://sexuality.about.com/od/glossary/g/dysparuenia.htm",
+            "Edging" => "http://sexuality.about.com/od/glossary/g/edging.htm",
+            "Emergent sex" => "http://sexuality.about.com/od/glossary/g/emergent_sex.htm",
+            "Erectile Dysfunction" => "http://sexuality.about.com/od/glossary/g/erectiledysfunc.htm",
+            "Erotophilia and Erotophobia" => "http://sexuality.about.com/od/glossary/g/erotophilia.htm",
+            "Female Orgasmic Disorder" => "http://sexuality.about.com/od/glossary/g/female_orgasmic.htm",
+            "Female Sexual Dysfunction" => "http://sexuality.about.com/od/glossary/g/female_sexual_dysfunction.htm",
+            "Female genital cosmetic surgery" => "http://sexuality.about.com/od/glossary/g/female_surgery.htm",
+            "Fetish" => "http://sexuality.about.com/od/glossary/g/fetish.htm",
+            "Frenulum Breve" => "http://sexuality.about.com/od/glossary/g/frenulum_breve.htm",
+            "Genetic Determinism" => "http://sexuality.about.com/od/glossary/g/genetic_determ.htm",
+            "Genital Herpes" => "http://sexuality.about.com/od/glossary/g/genital_herpes.htm",
+            "HSDD" => "http://sexuality.about.com/od/glossary/g/hsdd.htm",
+            "Hypersexual Disorder" => "http://sexuality.about.com/od/glossary/g/hypersexual_disorder.htm",
+            "Intercourse" => "http://sexuality.about.com/od/glossary/g/intercourse.htm",
+            "Kegel Exercises" => "http://sexuality.about.com/od/glossary/g/kegelexercises.htm",
+            "Kinsey Scale" => "http://sexuality.about.com/od/glossary/g/Kinsey-Scale.htm",
+            "Klismaphilia" => "http://sexuality.about.com/od/glossary/g/klismaphilia.htm",
+            "Labiaplasty" => "http://sexuality.about.com/od/glossary/g/labiaplasty.htm",
+            "Lichen Sclerosus" => "http://sexuality.about.com/od/glossary/g/Lichensclerosus.htm",
+            "Male Orgasmic Disorder" => "http://sexuality.about.com/od/glossary/g/male_orgasmic.htm",
+            "Male Strap On" => "http://sexuality.about.com/od/glossary/g/male_strap_on.htm",
+            "Male Vibrator" => "http://sexuality.about.com/od/malesextoys/g/Male-Vibrator.htm",
+            "Marital Aids" => "http://sexuality.about.com/od/glossary/g/Marital-Aids.htm",
+            "Masturbation" => "http://sexuality.about.com/od/glossary/g/masturbation.htm",
+            "Non Ejaculatory Orgasm" => "http://sexuality.about.com/od/glossary/g/nonejacorgasm.htm",
+            "Non-Monogamy" => "http://sexuality.about.com/od/glossary/g/nonmonogamy.htm",
+            "Oral Sex Taste" => "http://sexuality.about.com/od/glossary/g/oral_sex_taste.htm",
+            "PC Muscle" => "http://sexuality.about.com/od/glossary/g/pcmuscles.htm",
+            "PGAD" => "http://sexuality.about.com/od/glossary/g/pgad.htm",
+            "PSAS" => "http://sexuality.about.com/od/glossary/g/psas.htm",
+            "Pansexual" => "http://sexuality.about.com/od/glossary/g/pansexual.htm",
+            "Paraphilias" => "http://sexuality.about.com/od/glossary/g/paraphilias.htm",
+            "Penile Dysmorphophobia" => "http://sexuality.about.com/od/glossary/g/small_penis.htm",
+            "Penile Prosthesis" => "http://sexuality.about.com/od/glossary/g/penile_prosthesis.htm",
+            "Penis Limiter" => "http://sexuality.about.com/od/glossary/g/penis_limiter.htm",
+            "Penis Pumps" => "http://sexuality.about.com/od/glossary/g/penis_pumps.htm",
+            "Perineum" => "http://sexuality.about.com/od/glossary/g/perineum.htm",
+            "Phimosis" => "http://sexuality.about.com/od/glossary/g/Phimosis.htm",
+            "Phthalates" => "http://sexuality.about.com/od/glossary/g/phthalates.htm",
+            "Play Piercing" => "http://sexuality.about.com/od/glossary/g/Play-Piercing.htm",
+            "Pre-cum" => "http://sexuality.about.com/od/glossary/g/precum.htm",
+            "Premature Ejaculation" => "http://sexuality.about.com/od/glossary/g/premature_ejacu.htm",
+            "Priapism" => "http://sexuality.about.com/od/glossary/g/priapism_def.htm",
+            "Public Display of Affection" => "http://sexuality.about.com/od/glossary/g/public_display_of_affection.htm",
+            "Rainbow Parties" => "http://sexuality.about.com/od/glossary/g/rainbowparty.htm",
+            "Refractory Period" => "http://sexuality.about.com/od/glossary/g/refratoryperiod.htm",
+            "Romantic product salesmen" => "http://sexuality.about.com/od/glossary/g/romanticproduct.htm",
+            "Sex Coach" => "http://sexuality.about.com/od/glossary/g/sex-coach.htm",
+            "Sex Drive" => "http://sexuality.about.com/od/glossary/g/sex_drive.htm",
+            "Sex Educator" => "http://sexuality.about.com/od/glossary/g/sex_educator.htm",
+            "Sex Positive" => "http://sexuality.about.com/od/glossary/g/sex_positive.htm",
+            "Sex Professional" => "http://sexuality.about.com/od/glossary/g/sex-professional.htm",
+            "Sex Researcher" => "http://sexuality.about.com/od/glossary/g/sex-researcher.htm",
+            "Sex Tech" => "http://sexuality.about.com/od/glossary/g/sex_tech.htm",
+            "Sex Therapist" => "http://sexuality.about.com/od/glossary/g/sex-therapist.htm",
+            "Sex Toy" => "http://sexuality.about.com/od/glossary/g/sex_toys.htm",
+            "Sexologist" => "http://sexuality.about.com/od/glossary/g/sexologist.htm",
+            "Sexology" => "http://sexuality.about.com/od/glossary/g/sexology.htm",
+            "Sexual Behavior" => "http://sexuality.about.com/od/glossary/g/sexual_behavior.htm",
+            "Sexual Compatibility" => "http://sexuality.about.com/od/glossary/g/sexual_compatibility.htm",
+            "Sexual Dysfunction" => "http://sexuality.about.com/od/glossary/g/sexual_dysfunction.htm",
+            "Sexual Health" => "http://sexuality.about.com/od/glossary/g/sexual_health.htm",
+            "Sexual Identity" => "http://sexuality.about.com/od/glossary/g/sexual_identity.htm",
+            "Sexual Intimacy" => "http://sexuality.about.com/od/glossary/g/sexual_intimacy.htm",
+            "Sexual Orientation" => "http://sexuality.about.com/od/glossary/g/sexualorientata.htm",
+            "Sexual Problem" => "http://sexuality.about.com/od/glossary/g/sexual_problem.htm",
+            "Sexual Surrogates" => "http://sexuality.about.com/od/glossary/g/sex_surrogates.htm",
+            "Small Penis Syndrome" => "http://sexuality.about.com/od/glossary/g/small_penis_syn.htm",
+            "Swinging" => "http://sexuality.about.com/od/glossary/g/Swinging.htm",
+            "Teledildonics" => "http://sexuality.about.com/od/glossary/g/teledildonics_.htm",
+            "Uncircumcise" => "http://sexuality.about.com/od/glossary/g/Uncircumcise.htm",
+            "Vacuum Pumps" => "http://sexuality.about.com/od/glossary/g/vacuum_pumps.htm",
+            "Vaginoplasty" => "http://sexuality.about.com/od/glossary/g/vaginoplasty.htm",
+            "Vasocongestion" => "http://sexuality.about.com/od/glossary/g/vasocongestion.htm",
+            "Vibrator" => "http://sexuality.about.com/od/glossary/g/vibrator.htm",
+            "Virtual Sex" => "http://sexuality.about.com/od/glossary/g/virtual_sex.htm",
+            "Zoophilia" => "http://sexuality.about.com/od/glossary/g/zoophilia.htm"
         );
     }
 
