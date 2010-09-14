@@ -402,7 +402,7 @@ function sexPositiveGlossaryTerm($text) {
         }
 
         foreach ($sexpositiveterm_sexpositiveterm as $term => $url) {
-            $v->innertext = preg_replace("|\b$term\b|", "<a href=\"$url\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>", $v->innertext);
+            $v->innertext = preg_replace("|\b$term\b|i", "<a href=\"$url\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>", $v->innertext);
         }
 
     }
