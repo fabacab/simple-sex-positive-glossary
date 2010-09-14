@@ -12,6 +12,13 @@ Wraps common terms with a link to a definition of that term. Built-in dictionary
 
 WP Simple Sex-Positive Glossary automatically turns a number of sexuality-related terms into links that point to well-respected pages that provide definitions of those terms. It's an extremely simple and lightweight way to offer readers context so that you don't have to do the hard work of re-explaining yourself and your vocabulary all the time.
 
+Currently, somewhere on order of ~300 words and phrases including "sexually transmitted infections," "abstinence," "PC muscle," "IUD," and "sexologist" are linked to pages that define those terms. The plugin only maintains a simple mapping of terms to web addresses of the definition pages, not the definitions themselves. The sites the plugin links to include:
+
+* [sexuality.about.com](http://sexuality.about.com/)
+* [Scarleteen](http://scarleteen.com/)
+
+Each of these sites have a great glossary of terms, compiled by some of the best sex educators on the planet.
+
 == Installation ==
 
 1. Download the plugin file.
