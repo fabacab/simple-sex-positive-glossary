@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Sex-Positive Glossary
-Version: 0.1
+Version: 0.2
 Plugin URI: Wraps common terms with a link to a definition of that term. Built-in dictionary provides defaults for many sexuality-related phrases.
 Description: Wraps common terms with a link to a definition of that term.
 Author: Meitar "maymay" Moscovitz
@@ -391,38 +391,26 @@ function sexPositiveGlossaryTerm($text) {
         );
     }
 
-    $text = " $text ";
-    foreach($sexpositiveterm_sexpositiveterm as $term => $desc) {
-        if (is_array($desc)) {
-            $regex   = array_keys($desc);
-            $search  = $regex[0]; // there should always be just one value here
-            $replace = $desc[$search];
-            $text = preg_replace("/\b$search\b/", "<a href=\"$replace\" class=\"sspg term\" title=\"Look up '$1'\">$1</a>", $text);
-        } else {
-            /*    For advanced users, there are several possible regular expressions here....
-             *    The safest, "default" one is at the top ...
-             *    You (or I) may choose to use one of the others!
-             *    Pick whichever you want, and make SURE there is only one that isn't preceded by slashes: //
-             */
-            // OLD DEFAULT: CONSERVATIVE
-            //    $text = preg_replace("|([\s\>])$acronym([\s\<\.,;:\\/\-])|imsU" , "$1<acronym title=\"$description\">$acronym</acronym>$2" , $text);
+    $html = str_get_html($text); // parse using PHP Simple HTML DOM Parser
+    $text = $html->find('text');    // find all text nodes
 
-            // NEW DEFAULT: MORE DARING (case insensitive)
-            $text = preg_replace("|([^./?&]\b)$term(\b[^:])|imsU" , "$1<a href=\"$desc\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>$2" , $text);
-            $text = preg_replace("|(<[A-Za-z]* [^>]*)<a href=\"$desc\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>([^<]*>)|imsU" , "$1$term$2" , $text);
+    foreach ($text as $v) {
 
-            // SAME AS ABOVE, but CASE SENSITIVE
-            //    $text = preg_replace("|([^./]\b)$acronym(\b[^:])|msU" , "$1<acronym title=\"$description\">$acronym</acronym>$2" , $text);
-            //    $text = preg_replace("|(<[A-Za-z]* [^>]*)<acronym title=\"$description\">$acronym</acronym>([^<]*>)|msU" , "$1$acronym$2" , $text);
-
-            // BY REQUEST: if the following preg_replace here is uncommented:
-            //             acronyms wrapped in dollar signs will just be unwrapped
-            //             So: $AOL$ will become AOL, without the <acronym title="America Online">AOL</acronym>
-            $text = preg_replace("|[$]<a href=\"$desc\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>[$]|imsU", "$term", $text);
+        // Skip if this text is a link.
+        if ('a' === $v->parentNode()->tag) {
+            continue;
         }
+
+        foreach ($sexpositiveterm_sexpositiveterm as $term => $url) {
+            $v->innertext = preg_replace("|\b$term\b|", "<a href=\"$url\" class=\"sspg term\" title=\"Look up '$term'\">$term</a>", $v->innertext);
+        }
+
     }
-    return trim( $text );
+
+    return trim( $html->save() );
 }
+
+require_once(WP_PLUGIN_DIR.'/'.dirname(plugin_basename(__FILE__)).'/lib/simplehtmldom/simple_html_dom.php');
 
 add_filter('the_content', 'sexPositiveGlossaryTerm', 8);
 //add_filter('comment_text', 'sexPositiveGlossaryTerm', 8);

@@ -2,7 +2,7 @@
 Author: Meitar "maymay" Moscovitz
 Plugin URL: http://maybemaimed.com/playground/wp-simple-sex-positive-glossary/
 Tags: 
-Requires at least: 2.5
+Requires at least: 2.6
 Tested up to: 3.0.1
 Stable tag: trunk
 
@@ -33,5 +33,7 @@ No, not yet. However, you can suggest additions to the built-in dictionary by le
 * Initial release.
 
 == Other notes ==
+
+Due to this plugin's use of the PHP Simple HTML DOM Parser library, PHP5 or greater is required.
 
 Standing on the shoulders of giants is the only way to reach higher.
