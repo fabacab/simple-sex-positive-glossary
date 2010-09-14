@@ -23,11 +23,21 @@ WP Simple Sex-Positive Glossary automatically turns a number of sexuality-relate
 = Can I add my own terms? =
 No, not yet. However, you can suggest additions to the built-in dictionary by leaving a comment on [the plugin page](http://maybemaimed.com/playground/wp-simple-sex-positive-glossary/).
 
+= Can I style the glossary links specially? =
+
+Yes. When the plugin turns a term into a link, it adds a `class` of `sspg term` to the `<a>` element. In your style sheet, use a CSS selector like `a.sspg.term { cursor: help; }` to give the glossary links a special rollover style (for instance). You are only limited by your skill and imagination. :)
+
 == Screenshots ==
 
-1.
+1. (None yet! Sorry.)
 
 == Changelog ==
+
+= 0.2 =
+* Added over 250 more terms.
+* Fixed bug where letter case of term dictionary overrode post text.
+* Links are no longer added to text that is already a link.
+* Massive code simplification.
 
 = 0.1 =
 * Initial release.
