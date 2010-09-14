@@ -2,8 +2,8 @@
 /*
 Plugin Name: Simple Sex-Positive Glossary
 Version: 0.2
-Plugin URI: Wraps common terms with a link to a definition of that term. Built-in dictionary provides defaults for many sexuality-related phrases.
-Description: Wraps common terms with a link to a definition of that term.
+Plugin URI: http://maybemaimed.com/playground/wp-simple-sex-positive-glossary/
+Description: Wraps common terms with a link to a definition of that term. Built-in dictionary provides defaults for many sexuality-related phrases.
 Author: Meitar "maymay" Moscovitz
 Author URI: http://maybemaimed.com/
 
