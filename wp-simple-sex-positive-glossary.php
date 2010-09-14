@@ -283,7 +283,7 @@ function sexPositiveGlossaryTerm($text) {
             "identity" => "http://www.scarleteen.com/glossary/term/3378",
             "infection" => "http://www.scarleteen.com/glossary/term/3526",
             "insertive partner" => "http://www.scarleteen.com/glossary/term/3454",
-            "intercourse" => "http://www.scarleteen.com/glossary/term/3336",
+            //"intercourse" => "http://www.scarleteen.com/glossary/term/3336",
             "intersex" => "http://www.scarleteen.com/glossary/term/3500",
             "introitus" => "http://www.scarleteen.com/glossary/term/3396",
             "kinky" => "http://www.scarleteen.com/glossary/term/3425",
@@ -295,7 +295,7 @@ function sexPositiveGlossaryTerm($text) {
             "making out" => "http://www.scarleteen.com/glossary/term/3314",
             "manual sex" => "http://www.scarleteen.com/glossary/term/3328",
             "masculine" => "http://www.scarleteen.com/glossary/term/3456",
-            "masturbation" => "http://www.scarleteen.com/glossary/term/3312",
+            //"masturbation" => "http://www.scarleteen.com/glossary/term/3312",
             "menarche" => "http://www.scarleteen.com/glossary/term/3533",
             "menses" => "http://www.scarleteen.com/glossary/term/3491",
             "menstruation" => "http://www.scarleteen.com/glossary/term/3490",
@@ -392,7 +392,7 @@ function sexPositiveGlossaryTerm($text) {
     }
 
     $html = str_get_html($text); // parse using PHP Simple HTML DOM Parser
-    $text = $html->find('text');    // find all text nodes
+    $text = $html->find('text'); // find all text nodes
 
     foreach ($text as $v) {
 
